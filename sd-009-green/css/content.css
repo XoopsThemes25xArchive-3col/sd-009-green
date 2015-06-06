@@ -1,0 +1,457 @@
+/* Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris for help  *//* Mor.pho.GEN.e.sis version 2.1 by kris (http://www.xoofoo.org and http://www.frxoops.org) *//* file name : content.css - 12 01 2008 *//* style sheet for microformats *//*@import url(microforms.css);*//* Titles ... */
+h1 {
+font-size: 1.6em;
+}
+
+h2 {
+font-size: 1.4em;
+}
+
+h3 {
+font-size: 1.2em;
+}
+
+h4 {
+font-size: 1em;
+}
+
+h5 {
+font-size: .9em;
+}
+
+h6 {
+font-size: .8em;
+}
+
+h1 {
+clear: both;
+margin-top: .25em;
+margin-bottom: .5em;
+background-color: inherit;
+padding-left: .25em;
+color: #333;
+font-weight: bold;
+}
+
+h1 a, h2 a{
+background-color: inherit;
+color: #07a56f;
+text-decoration: underline;
+}
+
+h1 a:hover, h2 a:hover {
+background-color: inherit;
+color: #07a56f;
+text-decoration: none;
+}
+
+a[rel~=alternate] {
+float: right;
+}
+
+a {
+background-color: inherit;
+color: #002722;
+text-decoration: underline;
+}
+
+a:hover {
+background-color: inherit;
+color: #002722;
+text-decoration: none;
+}
+
+img {
+border: 0;
+}
+
+hr{}
+
+strong {
+font-style: italic;
+font-weight: bold;
+}
+
+del {
+text-decoration: line-through;
+}
+
+address {
+font-style: normal;
+letter-spacing: .1em;
+}
+/*---------- acronyms, abbréviation ------------*/
+
+acronym, abbr {
+border-bottom: #666 1px dashed;
+cursor: help;
+}
+
+acronym:hover, abbr:hover {
+border-bottom-color: #FF9900;
+}
+/*------------------- lists ----------------*/
+
+#xo-canvas-content ul {
+margin: 2px;
+padding: 2px;
+list-style: decimal inside;
+text-align: left;
+}
+
+#xo-canvas-content li {
+margin-left: 2px;
+background-color: inherit;
+color: #666;
+line-height: 1.4em;
+list-style: square inside;
+}
+/* ========== styles used in the “article” of contents (exemple : news) ============*/
+
+.item {
+margin-bottom: 20px;
+background-color: inherit;
+color: #333;
+}
+
+.itemHead {
+background-color: inherit;
+padding: 3px;
+}
+
+.itemInfo {
+background-color: inherit;
+padding: 3px;
+color: #333;
+font-size: .8em;
+font-style: italic;
+text-align: right;
+}
+
+.itemTitle a {
+background-color: inherit;
+font-weight: bold;
+}
+
+.itemTitle a:hover {
+background-color: inherit;
+}
+
+.itemPoster, .itemPostDate, .itemStats {
+background-color: inherit;
+color: #666;
+font-size: .9em;
+}
+
+.itemPoster a:hover {
+background-color: inherit;
+}
+
+.itemBody {
+background-color: inherit;
+padding: 5px;
+color: #666;
+}
+
+.itemText {
+margin-top: 1px;
+margin-bottom: 1px;
+background-color: inherit;
+color: #666;
+text-align: justify;
+}
+
+.itemText a, .itemInfo a, .itemFoot a {
+background-color: inherit;
+color: #999;
+font-weight: normal;
+}
+
+.itemText a:hover .itemInfo a:hover, .itemFoot a:hover {
+background-color: inherit;
+}
+
+.itemBody a{
+background-color: inherit;
+}
+
+.itemBody a:hover {
+background-color: #07a56f;
+color: #fff;
+text-decoration: none;
+}
+
+.itemText:first-letter {}
+
+.itemFoot {
+margin-right: 20px;
+margin-left: 20px;
+background-color: inherit;
+padding: 3px;
+color: #666;
+text-align: right;
+}
+
+.itemAdminLink {
+background-color: inherit;
+color: #666;
+font-size: .9em;
+}
+
+.itemPermaLink {
+background-color: inherit;
+color: #666;
+font-size: .9em;
+}
+/*=============== styles for the tables =================*/
+
+table {
+width: 100%;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+table td {
+padding: 0;
+border-width: 0;
+vertical-align: top;
+}
+
+.outer {
+background-color: #fff;
+color: #fff;
+font-size: .9em;
+}
+
+.outer a {
+background-color: transparent;
+color: #fff;
+}
+
+.outer a:hover {
+background-color: transparent;
+color: #000;
+}
+
+.head {
+background-color: transparent;
+padding: 5px;
+color: #333;
+font-weight: bold;
+}
+
+.head a {
+background-color: transparent;
+}
+
+.head a:hover {
+background-color: transparent;
+}
+
+.even {
+background-color: #fff;
+padding: 5px;
+color: #333;
+}
+
+.even a, .odd a {
+background-color: transparent !important;
+padding: 5px;
+color: #002722;
+text-decoration: underline;
+}
+
+.even a:hover, .odd a:hover {
+background-color: transparent;
+padding: 5px;
+color: #000;
+text-decoration: none;
+}
+
+.odd {
+background-color: #fff;
+padding: 5px;
+color: #666;
+}
+
+tr.even td {
+background-color: #f8f8f8;
+padding: 5px;
+color: #666;
+}
+
+tr.odd td {
+background-color: #f8f8f8;
+padding: 5px;
+color: #666;
+}
+
+.foot, tfoot {
+background-color: transparent;
+padding: 2px;
+color: #333;
+font-weight: bold;
+text-align: center;
+}
+
+th, thead {
+background-color: #002722;   /*hintergrund von Kontobalken*/
+padding: 2px;
+color: #fff;
+font-size: 1.1em;
+font-weight: bold;
+vertical-align: middle;
+}
+
+th a, thead a {
+background-color: inherit;
+}
+/* ===== core messages ===== */
+
+.highlight {
+background-color: #ff0;
+color: #FF0033;
+font-weight: bold;
+}
+
+.errorMsg,.confirmMsg, .resultMsg, .successMsg {
+padding: .8em;
+text-align: center;
+margin-bottom: 1em;
+border: 2px solid #ddd;
+}
+
+.errorMsg {
+background-color: #f8d8be;
+color: #de2021;
+border-color: #f8bd8c;
+}
+
+.confirmMsg {
+background-color: #FFF6BF;
+color: #817134;
+border-color: #808080;
+}
+
+.resultMsg {
+background-color: #C6D880;
+color: #1a3105;
+border-color: #808080;
+}
+
+.errorMsg a {
+background-color: transparent;
+color: #de2021;
+}
+
+.confirmMsg a {
+background-color: transparent;
+color: #808080;
+}
+
+.successMsg a {
+background-color: transparent;
+color: #808080;
+}
+
+div.xoopsCode {}
+
+div.xoopsQuote {}
+/*=========== Styles utilisés pour les commentaires (et newbb/cbb également) ===========*/
+
+.comTitle {
+margin-bottom: 2px;
+background-color: inherit;
+color: #fff;
+font-weight: bold;
+}
+
+.comText {
+background-color: inherit;
+padding: 2px;
+color: #666;
+}
+
+.comUserStat {
+margin: 2px;
+background-color: #fff;
+padding: 2px;
+color: #00242b;
+font-weight: bold;
+font-size: .8em;
+border: 1px solid #c0c0c0;
+}
+
+.comUserStatCaption {
+font-weight: normal;
+}
+
+.comUserStatus {
+margin-left: 2px;
+margin-top: 10px;
+background-color: inherit;
+color: #808080;
+font-weight: bold;
+font-size: .8em;
+}
+
+.comUserRank {
+margin: 2px;
+}
+
+.comUserRankText {
+font-size: .8em;
+font-weight: bold;
+}
+
+.comUserRankImg {
+border: 0;
+}
+
+.comUserName {}
+
+.comUserImg {
+margin: 2px;
+}
+
+.comDate {
+font-weight: normal;
+font-style: italic;
+font-size: .8em;
+}
+
+.comDateCaption {
+font-weight: bold;
+font-style: normal;
+}
+/*================ Style pour les Citations ================*/
+
+blockquote {
+margin-left: .5em;
+background-color: #f4faff;
+padding: .5em;
+color: #666;
+font-size: .9em;
+font-style: italic;
+border-width: 1px 1px 1px 6px;
+border-style: solid;
+border-color: #00242b;
+}
+/*================== Style pour les Codes =================*/
+
+.xoopsCode {
+display: block;
+padding: .5em;
+width: 95%;
+max-height: 400px;
+overflow: auto;
+background-color: #fff;
+color: #666;
+font-family: monospace;
+font-size: .9em;
+border: 1px solid #d0d0d0;
+}
+
+body.site_closed form {
+padding: 1em 35%;
+}

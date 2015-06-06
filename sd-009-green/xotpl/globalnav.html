@@ -1,0 +1,36 @@
+<div id="xo-globalnav">
+	<ul>
+		<li class="x2-label"><!-- <{$smarty.const.THEME_NAVTITLE}> -->&nbsp;</li>
+		<!-- menu en mode anonyme -->
+		<{if !$xoops_isuser}><{/if}>
+		<li><a href="/blog/" accesskey="a" title="News">Blog</a></li>
+		<li>
+			<a href="/designs/" accesskey="a" title="design">Designs</a>
+			<ul>
+				<li><a href="/designs/topten.php?hit=1" title="popul&auml;re Designs">Popul&auml;re Designs</a></li>
+				<li><a href="/designs/topten.php?rate=1" title="top bewertete Designs">Top Designs</a></li>
+			</ul>
+		</li>
+		<{if $xoops_isuser}>
+		<li>
+			<a href="/downloads/" accesskey="a" title="Downloads">Downloads</a>
+			<ul>
+				<li><a href="/downloads/topten.php?list=hit" title="popul&auml;re Downloads">Popul&auml;re Downloads</a></li>
+				<li><a href="/downloads/topten.php?list=rate" title="top bewertete Downloads">Top Downloads</a></li>
+			</ul>
+		</li>
+		<{/if}>
+		<li>
+			<a href="/netzwerk/" accesskey="a" title="Netzwerk">Netzwerk</a>
+			<ul>
+				<li><a href="/netzwerk/searchmembers.php" title="unsere Mitglieder">Unsere Mitglieder</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="/forum/" accesskey="a" title="Forum">Forum</a>
+			<ul>
+				<li><a href="/forum/index.php?cat_id=1" title="Themes und Designs">Themes und Designs</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>

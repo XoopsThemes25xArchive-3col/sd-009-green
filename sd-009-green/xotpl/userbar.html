@@ -1,0 +1,32 @@
+<div id="xo-userbar">
+        <{if !$xoops_isuser}>
+                <!-- menu in anonymous mode-->
+                <form method="post" action="<{xoAppUrl /user.php op=login}>">
+                <input name="uname" type="text" value="nickname" onfocus="this.value=(this.value=='<{$smarty.const.THEME_PSEUDO}>')? '' : this.value ;" title="nickname" size="15" />&nbsp;&nbsp;
+                <input name="pass" type="password" value="password" onfocus="this.value=(this.value=='<{$smarty.const.THEME_PASSWORD}>')? '' : this.value ;" title="password" size="15" />&nbsp;
+                <input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+                <{if $lang_siteclosemsg}>
+                <input type="hidden" name="xoops_login" value="1" />
+                <{/if}>
+                <button type="submit"><img src="<{xoImgUrl icons/users/home.png}>" title="Login" alt="Login" /></button>
+                </form>
+                <p style="text-align: right; padding-right: 2em; font-size: .8em;"><a href="<{xoAppUrl /register.php}>" class="register" title="register">Register</a></p>
+                <{else}>
+                <!-- menu in recorded mode -->
+                <p class="right">Welcome&nbsp;<a id="xo-uname" href="<{xoAppUrl /user.php}>" title="profile"><{$xoops_uname}></a></p>
+                <{xoInboxCount assign=pmcount}>
+                <a href="<{xoAppUrl viewpmsg.php}>">
+                <{if $pmcount}>
+                        <img src="<{xoImgUrl icons/users/inbox-full.png}>" title="inbox-full" alt="(<{$pmcount}>) unread messages"/>
+                <{else}>
+                        <img src="<{xoImgUrl icons/users/inbox.png}>" title="inbox" alt="new messages"/>
+                <{/if}>
+                </a>
+                <a href="<{xoAppUrl /notifications.php}>" title="Notifications"><img src="<{xoImgUrl icons/users/note_view.png}>" alt="Notifications"/></a>
+                <a href="<{xoAppUrl /user.php}>" title="My Account"><img src="<{xoImgUrl icons/users/profile.png}>" alt="My Account"/></a>
+                <{if $xoops_isadmin}>
+                        <a href="<{xoAppUrl /admin.php}>" title="Control Panel"><img src="<{xoImgUrl icons/users/configuration.png}>" alt="Control Panel" /></a>
+                <{/if}>
+                <a href="<{xoAppUrl /user.php op=logout}>" title="Logout" ><img src="<{xoImgUrl icons/users/exit.png}>" alt="Logout"/></a>
+        <{/if}>
+</div>
